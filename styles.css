@@ -182,10 +182,10 @@ hr {
 }
 
 #div-marcadores {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 2rem 0;
 }
 
-@media (max-width: 800px){
+@media (max-width: 768px){
     #level-title {
         font-size: 2.5rem;
     }
@@ -200,6 +200,9 @@ hr {
     }
     h3 {
       font-size: 1.2rem;
+    }
+    .timer-screen {
+      align-items: center;
     }
 
 }
