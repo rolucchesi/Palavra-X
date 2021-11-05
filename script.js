@@ -16,8 +16,8 @@ const arrayPalavrasAtual = []
 const arrayAcertos = []
 const numPalavras = 5;
 let indexPalavraAtual = 0;
-const timeRodada = 10;
-let timeLeft = 10;
+const timeRodada = 45;
+let timeLeft = 45;
 let marcadorAtual = document.querySelector(`#marcador-word-${indexPalavraAtual}`)
 let marcadoresAll = document.querySelectorAll('.marcador-word')
 
