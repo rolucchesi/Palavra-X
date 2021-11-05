@@ -5,7 +5,14 @@
   box-sizing: border-box;
 }
 
+/* html, body, overlay {
+    min-height: 100% !important;
+    height: calc(100%);
+} */
+
 body {
+    /* width: 100%;
+    height: 100%; */
     /* position: relative; */
   margin: 0;
   background-color: #97dcdf;
@@ -27,7 +34,7 @@ p {
   transform: translate(-50%, -50%);
   width: 70%;
   background-color: white;
-  padding: 6rem;
+  padding: 5%;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -39,6 +46,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 200vh;
+  min-width: 200vh;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
@@ -56,7 +65,7 @@ p {
 }
 
  #level-title {
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin: 12% 0% 1% 5%;
   color: #FEF2BF;
   color: #e3cc68;
@@ -98,7 +107,7 @@ hr {
 }
 
 #timer {
-  margin: 2rem 0rem 0rem 2rem;
+  margin: 2rem 0rem 2rem 2rem;
   font-size: 5rem;
 }
 
@@ -176,16 +185,32 @@ hr {
   margin: 1rem 0 0 0;
 }
 
-.teste {
-  position: relative;
-  width: 11em;
-  height: 2em;
-  /* float: left; */
-  /* margin: 0 2rem; */
-  /* width: 100%; */
-  background-color: red;
-  /* text-decoration: none; */
-  text-align: center;
+@media (max-width: 600px){
+    #level-title {
+        font-size: 2.5rem;
+    }
+    #level-subhead {
+        font-size: 1rem;
+    }
+    #timer {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 400px){
+    #level-title {
+        font-size: 2rem;
+    }
+    #level-subhead {
+        font-size: 1rem;
+    }
 }
 
 /* .marcador-word:before {
