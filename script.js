@@ -76,7 +76,7 @@ const listaPalavras = [
 
 btnNew.addEventListener('click', function() {
     jogoIniciado = false;
-    timeLeft = timeRodada;
+    timeLeft = 45;
     document.getElementById("timer").innerHTML = timeRodada;
     telaJogo.classList.remove('hidden')
     gerarArrayPalavras(numPalavras)
@@ -92,11 +92,6 @@ btnNew.addEventListener('click', function() {
     document.querySelector('.play-screen').classList.remove('hidden')
     document.querySelector('.win-screen').classList.add('hidden')
 });
-
-btnHow.addEventListener('click',function (){
-    console.log(timeLeft)
-    // console.log(palavraAleatoria)
-})
 
 btnStart.addEventListener('click',function() {
     jogoIniciado = true
