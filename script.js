@@ -18,6 +18,7 @@ const numPalavras = 5;
 let indexPalavraAtual = 0;
 const timeRodada = 45;
 let timeLeft = 45;
+let countdownTimer;
 let marcadorAtual = document.querySelector(`#marcador-word-${indexPalavraAtual}`)
 let marcadoresAll = document.querySelectorAll('.marcador-word')
 
@@ -175,7 +176,8 @@ const passarProximaPalavra = function (){
 }
 
 function iniciarCronometro() {
-    const countdownTimer = setInterval(function(){
+    clearInterval(countdownTimer);
+    countdownTimer = setInterval(function(){
         if(timeLeft <= 0){
           clearInterval(countdownTimer);
           document.getElementById("timer").innerHTML = timeLeft;
